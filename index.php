@@ -7,6 +7,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title><?php print titre ?></title>
+
+	<meta name="Description" content="EDW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	
@@ -37,7 +42,7 @@
 						if($root==3){
 							include_once("./template/contact.html");
 						}
-						else if($root>3 || $root==0){
+						else if($root>3 || $root==0 || $root<0){
 							echo '<p class="warning"><i class="far fa-frown"></i> La page demandée n\'existe pas!!</p>';
 							//header("HTTP/1.0 404 Not Found");
 						}
@@ -48,6 +53,6 @@
 					}
 
 			?>
-	</div>
+	</main>
 </body>
 </html>
